@@ -18,7 +18,7 @@
   "scripts": {
     "test": "node ./test/test.js",
     "build": "rm -rf ./app ./lib && tsc",
-    "release": "tsc && git checkout master && git merge dev && git push origin master && nrm use npm && npm publish && git checkout dev"
+    "release": "npm run build && git checkout master && git merge dev && git push origin master && nrm use npm && npm publish && git checkout dev"
   },
   "repository": {
     "type": "git",
