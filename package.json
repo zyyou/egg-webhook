@@ -1,6 +1,6 @@
 {
   "name": "egg-webhook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "egg webhook插件",
   "main": "",
   "types": "",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zyyou/nodejs-kit.git"
+    "url": "git+https://github.com/zyyou/egg-webhook.git"
   },
   "keywords": [
     "nodejs",
