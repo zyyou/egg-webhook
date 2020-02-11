@@ -23,5 +23,5 @@ config.webhook={
 # 调用
 
 ```
-this.ctx.webhook.dingtalk.sendText(text:string,attList:string[],atAll:boolean);
+this.ctx.helper.dingtalkWebhook.sendText(text:string,attList:string[],atAll:boolean);
 ```
