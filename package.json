@@ -1,0 +1,49 @@
+{
+  "name": "egg-webhook",
+  "version": "1.0.0",
+  "description": "egg webhook插件",
+  "main": "",
+  "types": "",
+  "eggPlugin": {
+    "name": "webhook",
+    "dependencies": [],
+    "optionalDependencies": [],
+    "env": [
+      "local",
+      "test",
+      "unittest",
+      "prod"
+    ]
+  },
+  "scripts": {
+    "test": "node ./test/test.js",
+    "build": "rm -rf ./app ./lib && tsc",
+    "release": "tsc && git checkout master && git merge dev && git push origin master && nrm use npm && npm publish && git checkout dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyyou/nodejs-kit.git"
+  },
+  "keywords": [
+    "nodejs",
+    "kit",
+    "sdk",
+    "lib",
+    "javascript",
+    "js",
+    "dingtalk",
+    "dingding",
+    "webhook"
+  ],
+  "author": "zyy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zyyou/egg-webhook/issues"
+  },
+  "homepage": "https://github.com/zyyou/egg-webhook#readme",
+  "dependencies": {
+    "@types/node": "^13.7.0",
+    "egg": "^2.26.0",
+    "nodejs-kit": "^1.0.5"
+  }
+}
