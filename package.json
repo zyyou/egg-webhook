@@ -1,6 +1,6 @@
 {
   "name": "egg-webhook",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "egg webhook插件",
   "main": "",
   "types": "",
