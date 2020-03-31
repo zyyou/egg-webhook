@@ -7,11 +7,19 @@
 
 - 钉钉机器人
 
-# 配置
+# plugin.js 配置
 
 ```
-# config.default.js
 
+  webhook: {
+    enable: true,
+    package: 'egg-webhook',
+  },
+```
+
+# config.default.js 配置
+
+```
 config.webhook = {
     dingtalk: {
       url: '',
