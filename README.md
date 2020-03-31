@@ -12,16 +12,16 @@
 ```
 # config.default.js
 
-config.webhook={
-    dingtalk:{
-        webhook:''
+config.webhook = {
+    dingtalk: {
+      url: '',
     },
-    weixin:{}
-}
+  };
+
 ```
 
 # 调用
 
 ```
-this.ctx.helper.dingtalkWebhook.sendText(text:string,attList:string[],atAll:boolean);
+const retVal = await ctx.helper.webhook.dingtalk.sendText('zyy: unit test');
 ```

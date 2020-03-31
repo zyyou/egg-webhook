@@ -16,7 +16,7 @@
     ]
   },
   "scripts": {
-    "test": "node ./test/test.js",
+    "test": "clear && egg-bin test",
     "build": "rm -rf ./app ./lib && tsc",
     "release": "npm run build && git checkout master && git merge dev && git push origin master && nrm use npm && npm publish && git checkout dev"
   },
@@ -42,8 +42,13 @@
   },
   "homepage": "https://github.com/zyyou/egg-webhook#readme",
   "dependencies": {
-    "@types/node": "^13.7.0",
     "egg": "^2.26.0",
-    "nodejs-kit": "^1.0.5"
+    "nodejs-kit": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "@types/mocha": "^7.0.2",
+    "egg-bin": "^4.14.1",
+    "egg-mock": "^4.0.0"
   }
 }
