@@ -2,7 +2,7 @@
 /app/
 /config/
 /interface/
-/lib/*
+/lib/
 main.d.ts
 main.js
 package-lock.json

@@ -23,6 +23,7 @@
 config.webhook = {
     dingtalk: {
       url: '',
+      startmsg: false,  // 应用启动自动发送一条消息
     },
   };
 
@@ -31,5 +32,5 @@ config.webhook = {
 # 调用
 
 ```
-const retVal = await ctx.helper.webhook.dingtalk.sendText('zyy: unit test');
+const retVal = await ctx.helper.getWebhook().dingtalk.sendText('zyy: unit test');
 ```
