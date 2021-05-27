@@ -5,6 +5,8 @@
 /lib/
 main.d.ts
 main.js
+agent.d.ts
+agent.js
 package-lock.json
 
 
