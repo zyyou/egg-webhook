@@ -21,6 +21,7 @@
 
 ```
 config.webhook = {
+    // 钉钉通知：注意机器人配置关键字、IP、签名，启动通知配置关键字中文冒号
     dingtalk: {
       url: '',
       startmsg: false,  // 应用启动通知，false=不通知，true=所有主机启动都通知，Array=只有配置的主机启动才通知
@@ -33,4 +34,10 @@ config.webhook = {
 
 ```
 const retVal = await ctx.helper.getWebhook().dingtalk.sendText('zyy: unit test');
+```
+
+# 启动通知示例
+
+```
+应用启动通知：主机 xxx 上的应用 xxxx[1.0.0] 以环境 local 启动
 ```
