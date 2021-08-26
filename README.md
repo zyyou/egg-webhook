@@ -23,7 +23,7 @@
 config.webhook = {
     dingtalk: {
       url: '',
-      startmsg: false,  // 应用启动自动发送一条消息
+      startmsg: false,  // 应用启动通知，false=不通知，true=所有主机启动都通知，Array=只有配置的主机启动才通知
     },
   };
 

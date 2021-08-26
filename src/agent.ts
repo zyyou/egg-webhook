@@ -14,7 +14,10 @@ module.exports = (agent: Agent) => {
 
     for (let key in config) {
       const cfg = config[key];
-      if (!cfg.startmsg || !existLib(key)) {
+      if (cfg.startmsg === false || !existLib(key)) {
+        continue;
+      }
+      if (Array.isArray(cfg.startmsg) && !cfg.startmsg.includes(os.hostname())) {
         continue;
       }
 
